@@ -3,8 +3,12 @@
 Install the [Eminzo](https://eminzo.dev) desktop app on macOS with [Homebrew](https://brew.sh).
 
 ```sh
-brew install --cask bqsistemas/tap/eminzo
+brew tap bqsistemas/tap
+brew trust bqsistemas/tap
+brew install --cask eminzo
 ```
+
+Homebrew 7 and later only load third-party taps you trust, so `brew trust` is needed once. On older Homebrew versions, skip that line.
 
 The cask installs the same signed and notarized build as the [download page](https://eminzo.dev/download/), for Apple silicon or Intel automatically. It requires macOS 13 Ventura or later.
 
