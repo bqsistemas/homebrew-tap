@@ -1,9 +1,9 @@
 cask "eminzo" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.0"
-  sha256 arm:   "c2e8eb1872d31e18c5f59202464f16cf16667364787d7b2a841498b9c2e63386",
-         intel: "8735214357dd733124264f315931c58c86a8c52942841c89a5493204dfc9e8a6"
+  version "0.2.0"
+  sha256 arm:   "fd13b5f6b99c3959bfa53fc2cadf79b45275a36c76f2f61b85f259b6c0d31b3a",
+         intel: "8b606be1b2e70e394c655121d5c340c45221367294999544004dabb4d79245c5"
 
   url "https://github.com/bqsistemas/eminzo-ai-factory/releases/download/desktop-v#{version}/Eminzo-mac-#{arch}.dmg"
   name "Eminzo"
@@ -34,5 +34,6 @@ cask "eminzo" do
   caveats <<~EOS
     Eminzo runs on the Eminzo CLI. Install it once with:
       npm i -g @eminzo/factory
+      eminzo install
   EOS
 end
