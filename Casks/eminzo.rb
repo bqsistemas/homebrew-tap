@@ -1,9 +1,9 @@
 cask "eminzo" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.0"
-  sha256 arm:   "fd13b5f6b99c3959bfa53fc2cadf79b45275a36c76f2f61b85f259b6c0d31b3a",
-         intel: "8b606be1b2e70e394c655121d5c340c45221367294999544004dabb4d79245c5"
+  version "0.2.1"
+  sha256 arm:   "8976ded6a0c384b2a987f27a625c10cb614823f493e7dc4f2a0d09e9870c616e",
+         intel: "780dff69d24a8f319dfa2f4a093321a2b40902c6e127c6782de5d2b01dc3e293"
 
   url "https://github.com/bqsistemas/eminzo-ai-factory/releases/download/desktop-v#{version}/Eminzo-mac-#{arch}.dmg"
   name "Eminzo"
